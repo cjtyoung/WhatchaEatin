@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WhatchaEatin</string>
+
+    // Auth
+    <string name="auth_hint_email">Email</string>
+    <string name="auth_hint_password">Password</string>
+    <string name="auth_label_signin">Sign In</string>
+    <string name="auth_button_signin">Sign In</string>
+    <string name="auth_button_create">Create an account</string>
+
+    <string name="createacct_label_create">Create an account</string>
+    <string name="createacct_button_create">Create account</string>
+</resources>

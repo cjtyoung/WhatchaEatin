@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/auth_fragment_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auth_label_signin"/>
+
+    <EditText
+        android:id="@+id/auth_edittext_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/auth_hint_email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/auth_edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/auth_hint_password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/auth_button_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auth_button_signin"/>
+
+    <Button
+        android:id="@+id/auth_button_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auth_button_create"/>
+
+</LinearLayout>

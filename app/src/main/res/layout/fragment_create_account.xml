@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createacct_label_create"/>
+
+    <EditText
+        android:id="@+id/createacct_edittext_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/auth_hint_email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/createacct_edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/auth_hint_password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/createacct_button_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createacct_button_create"/>
+
+    <TextView
+        android:id="@+id/createacct_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
