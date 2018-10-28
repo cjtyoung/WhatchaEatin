@@ -10,4 +10,18 @@
 
     <string name="createacct_label_create">Create an account</string>
     <string name="createacct_button_create">Create account</string>
+
+    // Main
+    <string name="main_header_calories">Calories</string>
+    <string name="main_header_protein">Protein</string>
+    <string name="main_header_fat">Fat</string>
+    <string name="main_header_carbs">Carbs</string>
+    <string name="main_header_water">Water</string>
+
+    <string name="main_macro_filler_calories">0 cal</string>
+    <string name="main_macro_filler_grams">0g</string>
+    <string name="main_macro_filler_litres">0L</string>
+
+    <string name="main_button_add_food">Add Food</string>
+    <string name="main_button_add_water">Add Water</string>
 </resources>

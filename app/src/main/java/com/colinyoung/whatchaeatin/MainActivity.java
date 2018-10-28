@@ -15,16 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
 
-    private TextView mainMessage;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         auth = FirebaseAuth.getInstance();
-
-        mainMessage = findViewById(R.id.main_message);
     }
 
     @Override
@@ -57,6 +53,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadMainView() {
 
-        mainMessage.setText("You are logged in!");
+        FirebaseUser currentUser = auth.getCurrentUser();
+
+        if (currentUser == null) {
+
+            // Obviously this should never happen but... ya know.
+            // TODO : Proper error handling
+            return;
+        }
+
+        TextView textViewCalories = findViewById(R.id.main_macro_calories);
+        TextView textViewProtein = findViewById(R.id.main_macro_protein);
+        TextView textViewFat = findViewById(R.id.main_macro_fat);
+        TextView textViewCarbs = findViewById(R.id.main_macro_carbs);
+        TextView textViewWater = findViewById(R.id.main_macro_water);
+
+
     }
 }
